@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivityFragment"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView android:text="@string/title" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/keywords"
+        android:layout_below="@+id/titleTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/titleTextView"
+        android:layout_alignEnd="@+id/titleTextView"
+        android:hint="@string/keyword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/searchbutton"
+        android:id="@+id/searchButton"
+        android:layout_below="@+id/keywords"
+        android:layout_alignRight="@+id/keywords"
+        android:layout_alignEnd="@+id/keywords"
+        android:onClick="searchButtononClick" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusTextView"
+        android:textSize="32dp"
+        android:layout_below="@+id/searchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/typeSpinner"
+        android:layout_alignTop="@+id/searchButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/searchButton"
+        android:layout_toStartOf="@+id/searchButton"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/statusTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ErrorReport"
+        android:layout_below="@+id/typeSpinner"
+        android:layout_toRightOf="@+id/statusTextView"
+        android:textSize="32dp"
+        android:layout_alignRight="@+id/searchButton"
+        android:layout_alignEnd="@+id/searchButton" />
+
+</RelativeLayout>
