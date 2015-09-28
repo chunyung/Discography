@@ -1,2 +1,2 @@
-# Discography
-Search discography information from AllMusic.com
+# DiscographyApp
+Android apps for searching discography information from AllMusic.com
